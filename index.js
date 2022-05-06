@@ -18,12 +18,6 @@ async function conectarBD() {
   // Aquí se abre la sesion
   
   try {
-    // // let result = await session.query("select from OUser where name = :name", {params: { name: "admin" }})
-    // let result = await session.query("SELECT name, apellido FROM #11:0")
-    // // let result = await session.command("CREATE VERTEX V SET name='Antonio', apellido='Biñuela'")
-    //   .all();
-    // console.log(result);
-
     const fs = require('fs');
     
     // ARTIST
@@ -140,7 +134,6 @@ async function conectarBD() {
     }
     
     console.log("Artists' tags inserted")
-
 
   } catch (err) {
     console.log("Error: " + err);
